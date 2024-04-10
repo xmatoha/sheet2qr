@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sheet2qr"
+version = "0.1.0"
+description = "cli utility that generates QR code document from spreadsheet"
+authors = ["Martin Hablak <martin.hablak@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+qrcode = "^7.4.2"
+reportlab = { version = "4.1.0", optional = true }
+click = "^8.1.7"
+sheet2dict = "^0.1.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pyzbar = "^0.1.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.extras]
+pdf = ["reportlab"]

@@ -1,0 +1,17 @@
+#+TITLE: sheet2qr  generates pdf qr codes from spreadsheet data
+
+
+* Intro
+This is simple cli to conver sheets (csv,xlsx) to pdf document which contains its qr code representation of data.
+
+* Installation
+#+begin_src sh
+python -m venv .venv
+source .vevn/bin/activate
+pip install -r requirements.txt
+#+end_src
+
+* Usage
+#+begin_src sh
+python -m sheet2qr from-xlsx --file file.xlsx --workbook-name workbook_to_use to-pdf --file qr_codes.pdf
+#+end_src
