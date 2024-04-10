@@ -13,5 +13,5 @@ pip install -r requirements.txt
 
 * Usage
 #+begin_src sh
-python -m sheet2qr from-xlsx --file file.xlsx --workbook-name workbook_to_use to-pdf --file qr_codes.pdf
+python -m sheet2qr from-xlsx --file file.xlsx --sheet-name sheet_to_use to-pdf --file qr_codes.pdf
 #+end_src
